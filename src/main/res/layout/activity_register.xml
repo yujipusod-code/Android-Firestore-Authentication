@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#483d8b"
+    android:padding="20dp">
+
+    <!-- TITLE LEFT-ALIGNED -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your\nAccount"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#808080"
+        android:layout_marginTop="40dp"
+        android:gravity="start" />
+
+    <!-- FULL NAME LABEL -->
+    <TextView
+        android:id="@+id/lblFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="20dp" />
+
+    <!-- FULL NAME INPUT -->
+    <EditText
+        android:id="@+id/edtFullName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblFullName"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_input_white"
+        android:padding="12dp"
+        android:textColor="#000"
+        android:textColorHint="#777"
+        android:hint="" />
+
+    <!-- EMAIL LABEL -->
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_below="@id/edtFullName"
+        android:layout_marginTop="15dp" />
+
+    <!-- EMAIL INPUT -->
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblEmail"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_input_white"
+        android:padding="12dp"
+        android:textColor="#000"
+        android:textColorHint="#777"
+        android:hint="" />
+
+    <!-- PASSWORD LABEL -->
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_below="@id/edtEmail"
+        android:layout_marginTop="15dp" />
+
+    <!-- PASSWORD INPUT -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblPassword"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_input_white"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#777"
+        android:hint="" />
+
+    <!-- CONFIRM PASSWORD LABEL -->
+    <TextView
+        android:id="@+id/lblConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_below="@id/edtPassword"
+        android:layout_marginTop="15dp" />
+
+    <!-- CONFIRM PASSWORD INPUT -->
+    <EditText
+        android:id="@+id/edtConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblConfirm"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_input_white"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#777"
+        android:hint="" />
+
+    <!-- SIGN UP BUTTON -->
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtConfirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#555555"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="SIGN UP"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#808080" />
+
+
+    <!-- BACK TO LOGIN -->
+    <TextView
+        android:id="@+id/txtBackLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Login"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_below="@id/btnSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

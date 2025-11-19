@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#483d8b"
+    tools:context=".HomeActivity">
+
+    <!-- WELCOME TEXT -->
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textColor="#808080"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="36dp"/>
+
+    <!-- PROFILE IMAGE -->
+
+    <!-- TRENDING TITLE -->
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="232dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_white_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtWelcome" />
+
+    <TextView
+        android:id="@+id/txtTrending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trending now"
+        android:textColor="#808080"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- TRENDING BOX 1 -->
+
+    <!-- TRENDING BOX 2 -->
+
+    <!-- TECH TIPS TITLE -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/trendBox1"
+        android:layout_width="323dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_white_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTrending">
+
+        <View
+            android:id="@+id/trendInner1a"
+            android:layout_width="276dp"
+            android:layout_height="22dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_gray_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/trendInner1b"
+            android:layout_width="259dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_gray_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/trendInner1a" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/trendBox2"
+        android:layout_width="272dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_white_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trendBox1">
+
+        <View
+            android:id="@+id/trendInner2"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_gray_box"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- TECH BOXES -->
+
+    <TextView
+        android:id="@+id/txtTechTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Explore Tech Tips"
+        android:textColor="#808080"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trendBox2" />
+
+    <TextView
+        android:id="@+id/tech1"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_white_box"
+        android:gravity="center"
+        android:text="AI"
+        android:textColor="#808080"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtTechTips"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tech2"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/rounded_white_box"
+        android:gravity="center"
+        android:text="Block"
+        android:textColor="#808080"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/tech1"
+        app:layout_constraintStart_toEndOf="@id/tech1"/>
+
+    <!-- LOGOUT BUTTON -->
+    <TextView
+        android:id="@+id/tech3"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_white_box"
+        android:gravity="center"
+        android:text="Quantum"
+        android:textColor="#808080"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toEndOf="@id/tech2"
+        app:layout_constraintTop_toTopOf="@id/tech1" />
+
+    <!-- WHITE DIVIDER ABOVE FOOTER -->
+
+    <!-- BOTTOM NAV -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/btn_rounded_gray"
+        android:text="Logout"
+        android:textColor="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tech3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#483d8b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/navSearch"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/search"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/home"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/navSearch"
+            app:layout_constraintEnd_toStartOf="@id/navSettings"
+            app:layout_constraintHorizontal_bias="0.5"/>
+
+        <ImageView
+            android:id="@+id/navSettings"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/setting"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/dividerFooter"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
