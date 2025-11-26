@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1047151168865",
+    "project_id": "neotech-10211",
+    "storage_bucket": "neotech-10211.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047151168865:android:1fae24116ee0aa9c754920",
+        "android_client_info": {
+          "package_name": "com.example.neotech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFdD-uSdm6KanipZ2nKoUINY43rdijpKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

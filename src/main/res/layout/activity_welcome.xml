@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dots"
+    tools:context=".WelcomeActivity">
+
+    <!-- Decorative Shapes -->
+    <ImageView
+        android:id="@+id/topLeftShape"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_9"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/topRightShape"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_11"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/bottomLeftShape"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_12"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/bottomRightShape"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_3"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/images"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NeoTech\nInsights"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/robotImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/img_8"
+        app:layout_constraintTop_toBottomOf="@id/appName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Uncover fresh ideas and breakthroughs driving the next era of technology."
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/robotImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Get Started"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#6CB4EE"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/descriptionText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="12dp"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#777777"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnGetStarted"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
